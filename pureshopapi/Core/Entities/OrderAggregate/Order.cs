@@ -13,7 +13,7 @@ namespace pureshopapi.Core.Entities.OrderAggregate
             BuyerEmail = buyerEmail;
             ShipToAddress = shipToAddress;
             DeliveryMethod = deliveryMethod;
-            Subtotal = subtotal;
+            SubTotal = subtotal;
             PaymentIntentId = paymentIntentId;
         }
 
@@ -22,7 +22,7 @@ namespace pureshopapi.Core.Entities.OrderAggregate
         public Address ShipToAddress { get; set; }
         public DeliveryMethod DeliveryMethod { get; set; }
         public IReadOnlyList<OrderItem> OrderItems { get; set; }
-        public decimal Subtotal { get; set; }
+        public decimal SubTotal { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
         public string PaymentIntentId { get; set; }
 
